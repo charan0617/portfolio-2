@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Charan</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #0d0d0d;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding-bottom: 100px;
+    }
+
+    .navbar {
+      background: #111;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      color: #00ffff;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      color: #00ffff;
+    }
+
+    .about-section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .about-section h2 {
+      font-size: 36px;
+      color: #00ffff;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .about-section p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    .highlights {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+
+    .highlights h3 {
+      color: #00ffff;
+      margin-bottom: 10px;
+    }
+
+    .highlight-item {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">Charan</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <h2>About Me</h2>
+
+    <p>Hi, I'm <strong>Charan Kathirvel</strong>, a passionate and motivated <strong>Web Developer</strong> with hands-on experience in building responsive and dynamic websites using modern technologies like HTML, CSS, JavaScript, React, Node, and MongoDB. I have completed a 6-month internship as a web developer and hold a B.Tech degree from Anna University with a CGPA of 7.5.</p>
+
+    <p>Beyond coding, I have showcased my skills in technical quizzes, project presentations, and various national-level sports like cricket, wrestling, and karate. I strive to create engaging user experiences and clean, maintainable code.</p>
+
+    <div class="highlights">
+      <h3>Highlights</h3>
+      <div class="highlight-item">🏆 First Place - Technical Quiz</div>
+      <div class="highlight-item">📊 Presented on IoT at College Symposium</div>
+      <div class="highlight-item">🏅 Gold Medal - National Cricket (Punjab)</div>
+      <div class="highlight-item">🥈 Silver Medal - State Freestyle Wrestling</div>
+      <div class="highlight-item">🥉 Bronze Medal - State Karate Championship</div>
+      <div class="highlight-item">💼 Head of Project Presentation - College Symposium</div>
+    </div>
+  </section>
+
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+        "color": { "value": "#ffffff" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.5 },
+        "size": { "value": 3 },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": { "enable": true, "speed": 3 }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": { "onhover": { "enable": true, "mode": "repulse" } }
+      },
+      "retina_detect": true
+    });
+  </script>
+</body>
+</html>
